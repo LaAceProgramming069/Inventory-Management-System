@@ -36,7 +36,7 @@ cd inventory-management
 3. Update API endpoint in `script.js` if needed:
 
 ```js
-const API_BASE = "https://inventory-store-nine.vercel.app";
+const API_BASE = "https://inventory-backend-roan.vercel.app";
 ```
 
 4. Use the system to manage products, suppliers, and orders.
