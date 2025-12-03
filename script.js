@@ -1,6 +1,6 @@
 // ---------- API Integration ----------
 // Set your backend base URL here
-const API_BASE = "https://inventory-store-nine.vercel.app";
+const API_BASE = "https://inventory-backend-roan.vercel.app/";
 
 async function fetchJSON(path, options = {}) {
   const url = path.startsWith("http") ? path : `${API_BASE}${path}`;
