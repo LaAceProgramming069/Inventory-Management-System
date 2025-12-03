@@ -16,7 +16,9 @@
     <h2>ORDERS</h2>
 
     <!-- FIXED FORM ID -->
-    <form id="order-form">
+<form id="order-form">
+
+    <div class="item-row">
         <div class="form-group">
             <label>Product:</label>
             <select class="product-id" id="product-id" required>
@@ -26,32 +28,34 @@
 
         <div class="form-group">
             <label>Quantity:</label>
-            <input type="number" id="order-qty" class="qty" placeholder="Quantity" required>
+            <input type="number" id="qty" class="qty" placeholder="Quantity" required>
         </div>
 
         <div class="form-group">
             <label>Price:</label>
-            <input type="number" id="order-price" class="price" placeholder="Price" required>
+            <input type="number" id="price" class="price" placeholder="Price" required>
         </div>
+    </div>
 
-        <div class="form-group">
-            <label>Supplier:</label>
-            <select id="order-supplierId" required>
-                <option value="">Select Supplier</option>
-            </select>
-        </div>
+    <div class="form-group">
+        <label>Supplier:</label>
+        <select id="order-supplierId" required>
+            <option value="">Select Supplier</option>
+        </select>
+    </div>
 
-        <div class="form-group">
-            <label>Status:</label>
-            <select id="order-status" required>
-                <option value="pending">Pending</option>
-                <option value="completed">Completed</option>
-                <option value="cancelled">Cancelled</option>
-            </select>
-        </div>
+    <div class="form-group">
+        <label>Status:</label>
+        <select id="order-status" required>
+            <option value="pending">Pending</option>
+            <option value="completed">Completed</option>
+            <option value="cancelled">Cancelled</option>
+        </select>
+    </div>
 
-        <button type="submit" id="submitButton">Add Order</button>
-    </form>
+    <button type="submit" id="submitButton">Add Order</button>
+</form>
+
 
     <h2>Order List</h2>
 
