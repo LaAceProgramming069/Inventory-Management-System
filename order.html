@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Inventory Management - Orders</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>Inventory Management System</header>
+
+    <div class="bar">
+        <a href="index.html">Products</a>
+        <a href="supplier.html">Suppliers</a>
+        <a href="order.html">Orders</a>
+    </div>
+
+    <h2>ORDERS</h2>
+
+    <!-- FIXED FORM ID -->
+    <form id="order-form">
+        <div class="form-group">
+            <label>Product:</label>
+            <select class="product-id" id="product-id" required>
+                <option value="">Select Product</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label>Quantity:</label>
+            <input type="number" id="order-qty" class="qty" placeholder="Quantity" required>
+        </div>
+
+        <div class="form-group">
+            <label>Price:</label>
+            <input type="number" id="order-price" class="price" placeholder="Price" required>
+        </div>
+
+        <div class="form-group">
+            <label>Supplier:</label>
+            <select id="order-supplierId" required>
+                <option value="">Select Supplier</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label>Status:</label>
+            <select id="order-status" required>
+                <option value="pending">Pending</option>
+                <option value="completed">Completed</option>
+                <option value="cancelled">Cancelled</option>
+            </select>
+        </div>
+
+        <button type="submit" id="submitButton">Add Order</button>
+    </form>
+
+    <h2>Order List</h2>
+
+    <!-- FIXED TABLE ID -->
+    <table id="order-table">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Items</th>
+                <th>Supplier</th>
+                <th>Status</th>
+                <th>Menu</th>
+            </tr>
+        </thead>
+        <tbody></tbody>
+    </table>
+
+    <script src="script.js"></script>
+</body>
+</html>

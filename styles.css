@@ -1,0 +1,186 @@
+body {
+    font-family: Arial, sans-serif;
+    background: #e0f0f5;  /* light color instead of gradient for clarity */
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+header{
+    background-color: #1E3A8A; /* deep blue */
+    color: white;
+    padding: 25px 0;
+    text-align: center;
+    font-size: 28px;
+    font-weight: bold;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    margin: 30px 0 30px 0; /* top and bottom margin */
+}
+
+
+form {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2 columns for the form */
+    gap: 20px 40px; /* row-gap 20px, column-gap 40px */
+    background-color: #fff;
+    border: 2px solid #4CAF50;
+    border-radius: 10px;
+    padding: 25px;
+    max-width: 95%;
+    margin: 0 auto 40px auto;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+/* Each label/input pair is a vertical stack */
+.form-group {
+    display: grid;
+    grid-template-rows: auto auto; /* label on top, input below */
+}
+
+/* Make all inputs take full width */
+.form-group input {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+.form-group select {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+/* Submit button aligned right */
+form button {
+    grid-column: span 2;
+    width: auto;
+    justify-self: end;
+    padding: 8px 16px;
+    font-size: 14px;
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #45a049;
+}
+
+/* Table Section */
+table {
+    width: 90%;
+    margin: 0 auto 50px auto;
+    border-collapse: collapse;
+    background-color: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1); /* stronger shadow for separation */
+}
+
+/* Table headers */
+thead th {
+    background-color: #4CAF50;
+    color: #fff;
+    padding: 12px;
+    border-right: 1px solid #fff;
+    text-align: center;
+}
+
+thead th:last-child {
+    border-right: none;
+}
+
+/* Table body cells */
+tbody td {
+    padding: 12px;
+    border-bottom: 1px solid #ddd;
+    border-right: 1px solid #eee;
+    text-align: left;
+}
+
+tbody td:last-child {
+    border-right: none;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+/* Buttons */
+button.edit-btn {
+    background-color: #2196F3;
+    margin-right: 5px;
+    padding: 5px 10px;
+    font-size: 12px;
+}
+
+button.edit-btn:hover {
+    background-color: #1976D2;
+}
+
+button.delete-btn {
+    background-color: #f44336;
+    padding: 5px 10px;
+    font-size: 12px;
+}
+
+button.delete-btn:hover {
+    background-color: #d32f2f;
+}
+.bar {
+    background-color: #0a0dcb;
+    overflow: hidden;
+    margin-bottom: 20px;
+
+    display: flex;            /* enable flexbox */
+    justify-content: center;  /* center horizontally */
+    align-items: center;      /* center vertically */
+}
+
+.bar a {
+    color: white;
+    padding: 12px 20px;
+    text-decoration: none;
+    font-size: 16px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+table td .edit-product,
+table td .edit-supplier,
+table td .edit-order {
+  background: #2196f3;
+  border-radius: 3px;
+  color: white;
+}
+
+table td .edit-product:hover,
+table td .edit-supplier:hover,
+table td .edit-order:hover {
+  background: #230bda;
+  transform: translateY(-2px);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.4);
+}
+
+table td .delete-product,
+table td .delete-supplier,
+table td .delete-order {
+  background: #f44336;
+  border-radius: 3px;
+  color: white;
+}
+
+table td .delete-product:hover,
+table td .delete-supplier:hover,
+table td .delete-order:hover {
+  background: #da190b;
+  transform: translateY(-2px);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.4);
+}

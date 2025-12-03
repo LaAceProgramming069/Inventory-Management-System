@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Inventory Management - Suppliers</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>Inventory Management System</header>
+
+    <div class="bar">
+        <a href="index.html">Products</a>
+        <a href="supplier.html">Suppliers</a>
+        <a href="order.html">Orders</a>
+    </div>
+
+    <h2>SUPPLIERS</h2>
+
+    <!-- FIXED FORM ID -->
+    <form id="supplier-form">
+        <div class="form-group">
+            <label>Supplier Name:</label>
+            <input type="text" id="supplier-name" required>
+        </div>
+
+        <div class="form-group">
+            <label>Contact:</label>
+            <input type="text" id="supplier-contact" required>
+        </div>
+
+        <button type="submit" id="submitButton">Add Supplier</button>
+    </form>
+
+    <h2>Supplier List</h2>
+
+    <!-- FIXED TABLE ID -->
+    <table id="supplier-table">
+        <thead>
+            <tr>
+                <th>Supplier Name</th>
+                <th>Contact</th>
+                <th>Menu</th>
+            </tr>
+        </thead>
+        <tbody></tbody>
+    </table>
+
+    <script src="script.js"></script>
+</body>
+</html>
