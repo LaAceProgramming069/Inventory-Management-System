@@ -152,6 +152,21 @@ button.delete-btn:hover {
     justify-content: center;
     align-items: center;
 }
+a {
+    color: white;
+    text-decoration: none;
+    padding: 12px 20px;
+    font-size: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, sans-serif;
+    transition: background-color 0.3s, color 0.3s;
+}
+a:hover {
+    background-color: #0a0dcb;
+    color: rgb(169, 17, 219);
+}
 
 table td .edit-product,
 table td .edit-supplier,
